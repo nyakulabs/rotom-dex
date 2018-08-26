@@ -7,7 +7,7 @@ const Pokedex = require('pokedex-promise-v2');
 const pokedex = new Pokedex();
 
 const config = {
-    logging: true,
+    logging: false,
 };
 
 const app = new App(config);
