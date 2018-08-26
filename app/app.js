@@ -20,16 +20,8 @@ app.setHandler({
     },
 
     'HelloWorldIntent': function() {
-        this.ask('I\'m Rotom Dex. Ask me about Pokemon.');
+        this.tell('I\'m Rotom Dex. Ask me about Pokemon.');
     },
-
-    /*'MyNameIsIntent': function(name) {
-        if (!name.value === undefined) {
-            this.tell('Excuse me, I couldn\'t quite understand that.');
-        } else {
-            this.tell('Hey ' + name.value + ', nice to meet you!');
-        }
-    },*/
 
     'PokemonInfo': function(pokemon) {
         pokedex.getPokemonSpeciesByName(pokemon.value.toLowerCase())

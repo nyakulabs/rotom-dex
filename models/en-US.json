@@ -10,28 +10,16 @@
             ]
         },
         {
-            "name":"MyNameIsIntent",
-            "phrases":[
-                "{name}",
-                "my name is {name}",
-                "i am {name}",
-                "you can call me {name}"
-            ],
-            "inputs":[
-                {
-                    "name":"name",
-                    "type":{
-                        "alexa":"AMAZON.US_FIRST_NAME",
-                        "dialogflow":"@sys.given-name"
-                    }
-                }
-            ]
-        },
-        {
             "name":"PokemonInfo",
             "phrases":[
                 "tell me about {pokemon}",
                 "{pokemon} info",
+                "info about {pokemon}"
+                "look up {pokemon}",
+                "about {pokemon}",
+                "{pokemon} information",
+                "information about {pokemon}",
+                "{pokemon}"
             ],
             "inputs":[
                 {
