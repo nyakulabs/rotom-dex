@@ -33,7 +33,7 @@ app.setHandler({
 
     'PokemonInfo': function(pokemon) {
         pokedex.getPokemonSpeciesByName(pokemon.value).then(response => {
-            this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en') && (o.version.name === 'moon'))[0].flavor_text);
+            this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text);
         });
     },
 });
