@@ -45,7 +45,7 @@ app.setHandler({
         .catch(err => {
             console.log(err);
             this.tell("Sorry, I don't know about that Pokémon.")
-        })
+        });
     },
 });
 
