@@ -32,14 +32,9 @@ app.setHandler({
     },
 
     'PokemonInfo': function(pokemon) {
-        try {
-            pokedex.getPokemonSpeciesByName(pokemon.value).then(response => {
-                this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en') && (o.version.name === 'moon'))[0].flavor_text);
-            });
-        } catch(err) {
-            console.log(err);
-            this.tell('Sorry, an error has occurred.');
-        }
+        pokedex.getPokemonSpeciesByName(pokemon.value).then(response => {
+            this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en') && (o.version.name === 'moon'))[0].flavor_text);
+        });
     },
 });
 
