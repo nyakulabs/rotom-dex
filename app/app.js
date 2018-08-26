@@ -20,7 +20,7 @@ app.setHandler({
     },
 
     'HelloWorldIntent': function() {
-        this.tell('I\'m Rotom Dex. Ask me about Pokemon.');
+        this.tell('I\'m Rotom Dex. Ask me about Pokémon.');
     },
 
     'PokemonInfo': function(pokemon) {
