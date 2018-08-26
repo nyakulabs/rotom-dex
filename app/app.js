@@ -29,7 +29,7 @@ app.setHandler({
             let pokemonName = response.names.filter(o => (o.language.name === 'en'))[0].name;
             let pokemonIntro = response.genera.filter(o => (o.language.name === 'en'))[0].genus;
             let pokemonDesc = response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text;
-            this.tell(`${pokemonName}, the ${pokemonIntro}:\n${pokemonDesc}`);
+            this.tell(`${pokemonName}, the ${pokemonIntro}.\n${pokemonDesc}`);
         })
         .catch(err => {
             console.log(err);
