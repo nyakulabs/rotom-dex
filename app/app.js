@@ -33,12 +33,13 @@ app.setHandler({
 
     'PokemonInfo': function(pokemon) {
         pokedex.getPokemonSpeciesByName(pokemon.value.toLowercase())
-            .then(response => {
-                this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text);
-            })
-            .catch(err => {
-                this.tell('Sorry, no data for '+ pokemon.value +' could be found.');
-            });
+        .then(response => {
+            if (!response) {
+              this.tell("Sorry, I don't know about that Pokémon.")
+            } else {
+              this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text);
+            }
+        })
     },
 });
 
