@@ -26,6 +26,22 @@
                     }
                 }
             ]
+        },
+        {
+            "name":"PokemonInfo",
+            "phrases":[
+                "tell me about {pokemon}",
+                "{pokemon} info",
+            ],
+            "inputs":[
+                {
+                    "name":"pokemon",
+                    "type":{
+                        "alexa":"AMAZON.SearchQuery",
+                        "dialogflow":"@sys.any"
+                    }
+                }
+            ]
         }
     ]
 }
