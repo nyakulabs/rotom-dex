@@ -32,9 +32,9 @@ app.setHandler({
     },*/
 
     'PokemonInfo': function(pokemon) {
-        pokedex.getPokemonSpeciesByName(pokemon.value.toLowercase())
+        pokedex.getPokemonSpeciesByName(pokemon.value.toLowerCase())
         .then(response => {
-            if (!response.flavor_text_entries) {
+            if (!response.flavor_text_entries) { // quick and dirty smh
               this.tell("Sorry, I don't know about that Pokémon.")
             } else {
               this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text);
