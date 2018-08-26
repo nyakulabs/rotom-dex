@@ -20,7 +20,8 @@ app.setHandler({
     },
 
     'HelloWorldIntent': function() {
-        this.tell('I\'m Rotom Dex. Ask me about Pokémon.');
+        this.ask('I\'m Rotom Dex. Ask me about Pokémon.');
+        console.log('New client.');
     },
 
     'PokemonInfo': function(pokemon) {
@@ -28,15 +29,11 @@ app.setHandler({
         .then(response => {
             try {
                 let pkmnName = response.names.filter(o => o.language.name === 'en')[0].name;
-                console.log('name worked');
                 let pkmnSpecies = response.genera.filter(o => o.language.name === 'en')[0].genus;
-                console.log('species worked');
                 let pkmnDesc = response.flavor_text_entries.filter(o => o.language.name === 'en')[0].flavor_text;
-                console.log('desc worked');
                 let fullResponse = `${pkmnName}, the ${pkmnSpecies}. ${pkmnDesc}`;
-                console.log(fullResponse);
                 this.tell(fullResponse);
-                console.log('wtf');
+                console.log(`Request for ${pkmnName} fulfilled. [${Date.now()}]`);
             } catch(err) {
                 this.tell('An error has occurred.');
                 console.log(err);
