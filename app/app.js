@@ -32,11 +32,10 @@ app.setHandler({
     },
 
     'PokemonInfo': function(pokemon) {
-        (async () => {
-            let response = await pokedex.getPokemonByName(pokemon);
+        pokedex.getPokemonByName(pokemon).then(response => {
             console.log(response);
             this.tell('Okay.');
-        })();
+        });
     },
 });
 
