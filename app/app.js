@@ -26,10 +26,10 @@ app.setHandler({
     'PokemonInfo': function(pokemon) {
         pokedex.getPokemonSpeciesByName(pokemon.value.toLowerCase())
         .then(response => {
-            let pokemonName = response.names.filter(o => (o.language.name === 'en'))[0].name;
-            let pokemonIntro = response.genera.filter(o => (o.language.name === 'en'))[0].genus;
-            let pokemonDesc = response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text;
-            this.tell(`${pokemonName}, the ${pokemonIntro}: ${pokemonDesc}`);
+            const pokemonName = response.names.filter(o => (o.language.name === 'en'))[0].name;
+            const pokemonIntro = response.genera.filter(o => (o.language.name === 'en'))[0].genus;
+            const pokemonDesc = response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text;
+            this.tell(pokemonName + ', the ' + pokemonIntro + '. ' + pokemonDesc);
         })
         .catch(err => {
             console.log(err);
