@@ -20,7 +20,7 @@ app.setHandler({
     },
 
     'HelloWorldIntent': function() {
-        this.ask('I\'m Rotom Dex.', 'Ask me about Pokemon.');
+        this.ask('I\'m Rotom Dex. Ask me about Pokemon.');
     },
 
     /*'MyNameIsIntent': function(name) {
@@ -32,7 +32,7 @@ app.setHandler({
     },*/
 
     'PokemonInfo': function(pokemon) {
-        pokedex.getPokemonSpeciesByName(pokemon.value)
+        pokedex.getPokemonSpeciesByName(pokemon.value.toLowercase())
             .then(response => {
                 this.tell(response.flavor_text_entries.filter(o => (o.language.name === 'en'))[0].flavor_text);
             })
