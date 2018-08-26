@@ -32,9 +32,8 @@ app.setHandler({
     },
 
     'PokemonInfo': function(pokemon) {
-        pokedex.getPokemonByName(pokemon.value).then(response => {
-            console.log(response);
-            this.tell('Okay.');
+        pokedex.getPokemonSpeciesByName(pokemon.value).then(response => {
+            this.tell(response.flavor_text_entries[2].flavor_text);
         });
     },
 });
