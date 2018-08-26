@@ -1,10 +1,10 @@
 'use strict';
 
-// =================================================================================
-// App Configuration
-// =================================================================================
+// //
 
 const {App} = require('jovo-framework');
+const Pokedex = require('pokedex-promise-v2');
+const pokedex = new Pokedex();
 
 const config = {
     logging: true,
@@ -12,10 +12,7 @@ const config = {
 
 const app = new App(config);
 
-
-// =================================================================================
-// App Logic
-// =================================================================================
+// //
 
 app.setHandler({
     'LAUNCH': function() {
@@ -27,7 +24,19 @@ app.setHandler({
     },
 
     'MyNameIsIntent': function(name) {
-        this.tell('Hey ' + name.value + ', nice to meet you!');
+        if (!name.value === undefined) {
+            this.tell('Excuse me, I couldn\'t quite understand that.');
+        } else {
+            this.tell('Hey ' + name.value + ', nice to meet you!');
+        }
+    },
+
+    'PokemonInfo': function(pokemon) {
+        (async() {
+            let response = await pokedex.getPokemonByName(pokemon);
+            console.log(response);
+            this.tell('Okay.');
+        })();
     },
 });
 
