@@ -3,14 +3,15 @@
 // //
 
 // import this dumb veekun sht
-const json = [
-    'abilities': require('../json/abilities.json'),
-    'pokemon_species': require('../json/pokemon_species.json'),
-    'pokemon_species_flavor_summaries': require('../json/pokemon_species_flavor_text.json'),
-    'pokemon_species_flavor_text': require('../json/pokemon_species_flavor_text.json'),
-    'pokemon_species_prose': require('../json/pokemon_species_prose.json'),
-    'pokemon_types': require('../json/pokemon_types.json')
-];
+
+const json = [];
+
+json.abilities = require('../json/abilities.json');
+json.pokemon_species = require('../json/pokemon_species.json');
+json.pokemon_species_flavor_summaries = require('../json/pokemon_species_flavor_text.json');
+json.pokemon_species_flavor_text = require('../json/pokemon_species_flavor_text.json');
+json.pokemon_species_prose = requ
+json.pokemon_types = require('../json/pokemon_types.json');
 
 const {App} = require('jovo-framework');
 /*
