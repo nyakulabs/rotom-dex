@@ -56,7 +56,7 @@ app.setHandler({
                     o.version_id === 29 && o.language_id === 9
                 });
                 let pkmnFlavor = pkmnFlavorObj.flavor_text;
-                let fullResponse = `${pkmnName}, the ${pkmnGenus}. ${pkmnDesc}`;
+                let fullResponse = `${pkmnName}, the ${pkmnGenus}. ${pkmnFlavor}`;
                 this.tell(fullResponse);
                 console.log(`Request for ${pkmnName} fulfilled. [${Date.now()}]`);
 
