@@ -10,6 +10,7 @@ json.abilities = require('../json/abilities.json');
 json.pokemon_species = require('../json/pokemon_species.json');
 json.pokemon_species_flavor_summaries = require('../json/pokemon_species_flavor_text.json');
 json.pokemon_species_flavor_text = require('../json/pokemon_species_flavor_text.json');
+json.pokemon_species_names = require('../json/pokemon_species_names.json')
 json.pokemon_species_prose = require('../json/pokemon_species_prose.json');
 json.pokemon_types = require('../json/pokemon_types.json');
 
