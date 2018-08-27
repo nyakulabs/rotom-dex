@@ -4,15 +4,13 @@
 
 // import this dumb veekun sht
 
-const json = [];
-
-json.abilities = require('../json/abilities.json');
-json.pokemon_species = require('../json/pokemon_species.json');
-json.pokemon_species_flavor_summaries = require('../json/pokemon_species_flavor_text.json');
-json.pokemon_species_flavor_text = require('../json/pokemon_species_flavor_text.json');
-json.pokemon_species_names = require('../json/pokemon_species_names.json')
-json.pokemon_species_prose = require('../json/pokemon_species_prose.json');
-json.pokemon_types = require('../json/pokemon_types.json');
+const abilities = require('../json/abilities.json');
+const pokemon_species = require('../json/pokemon_species.json');
+const pokemon_species_flavor_summaries = require('../json/pokemon_species_flavor_text.json');
+const pokemon_species_flavor_text = require('../json/pokemon_species_flavor_text.json');
+const pokemon_species_names = require('../json/pokemon_species_names.json')
+const pokemon_species_prose = require('../json/pokemon_species_prose.json');
+const pokemon_types = require('../json/pokemon_types.json');
 
 const {App} = require('jovo-framework');
 /*
@@ -41,13 +39,13 @@ app.setHandler({
     'PokemonInfo': function(pokemon) {
 
             try {
-                let pkmnObj = json.pokemon_species.filter(o => {
+                let pkmnObj = pokemon_species.filter(o => {
                     o.identifier === pokemon.value.toLowerCase()
                 });
                 console.log(pkmnObj);
                 let pkmnID = pkmnObj.id;
                 console.log(pkmnID);
-                let pkmnSpNameObj = json.pokemon_species_names.filter(o => {
+                let pkmnSpNameObj = pokemon_species_names.filter(o => {
                     o.pokemon_species_id === pkmnID && o.local_language_id === 9
                 });
                 console.log(pkmnSpNameObj);
@@ -55,7 +53,7 @@ app.setHandler({
                 let pkmnGenus = pkmnSpNameObj.genus;
                 console.log(pkmnName);
                 console.log(pkmnGenus);
-                let pkmnFlavorObj = json.pokemon_species_flavor_text.filter(o => {
+                let pkmnFlavorObj = pokemon_species_flavor_text.filter(o => {
                     o.version_id === 29 && o.language_id === 9
                 });
                 console.log(pkmnFlavorObj);
