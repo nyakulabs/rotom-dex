@@ -46,7 +46,7 @@ app.setHandler({
                 });
                 let pkmnID = pkmnObj.id;
 
-                let pkmnSpNameObj = json.pokmeon_species_names.filter(o => {
+                let pkmnSpNameObj = json.pokemon_species_names.filter(o => {
                     o.pokemon_species_id === pkmnID && o.local_language_id === 9
                 });
                 let pkmnName = pkmnSpNameObj.name;
