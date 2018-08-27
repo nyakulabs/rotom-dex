@@ -55,10 +55,9 @@ app.setHandler({
                     let pkmnName = pkmnSpNameObj.name;
                     let pkmnGenus = pkmnSpNameObj.genus;
 
-                    let pkmnFlavorObjJ = pokemon_species_flavor_text.filter(o => (
-                        o.language_id === 9 && o.species_id === pkmnID && (!o.version_id === 19 && !o.version_id === 20)
+                    let pkmnFlavorObj = pokemon_species_flavor_text.filter(o => (
+                        o.language_id === 9 && o.species_id === pkmnID
                     ));
-                    let pkmnFlavorObj = pkmnFlavorObjJ[pkmnFlavorObjJ.length - 1];
 
                     let pkmnFlavor = pkmnFlavorObj.flavor_text.replace(/[\r\n]+/g,' ');
 
