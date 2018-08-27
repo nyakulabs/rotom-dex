@@ -41,7 +41,7 @@ app.setHandler({
 
             try {
                 let pkmnObj = json.pokemon_species.filter(o => {
-                    o.identifier === pokemon.toLowerCase()
+                    o.identifier === pokemon.value.toLowerCase()
                 });
                 let pkmnID = species.id;
 
