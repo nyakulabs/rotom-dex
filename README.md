@@ -3,4 +3,4 @@ Rotom Dex is a Pokédex written using the Jovo Framework. It has been tested to 
 
 It uses a JSON version of [@veekun/pokedex](https://github.com/veekun/pokedex) as a data source.
 
-Created by @shirtjs and @nokkusuu.
+Created by [@shirtjs](https://github.com/shirtjs) and [@nokkusuu](https://github.com/nokkusuu).
