@@ -39,23 +39,23 @@ app.setHandler({
     'PokemonInfo': function(pokemon) {
 
             try {
-                let pkmnObj = pokemon_species.filter(o => {
+                let pkmnObj = pokemon_species.filter(o => (
                     o.identifier === pokemon.value.toLowerCase()
-                });
+                ));
                 console.log(pkmnObj)[0];
                 let pkmnID = pkmnObj[0].id;
                 console.log(pkmnID[0]);
-                let pkmnSpNameObj = pokemon_species_names.filter(o => {
+                let pkmnSpNameObj = pokemon_species_names.filter(o => (
                    o.pokemon_species_id === pkmnID && o.local_language_id === 9
-                });
+                ));
                 console.log(pkmnSpNameObj)[0];
                 let pkmnName = pkmnSpNameObj[0].name;
                 let pkmnGenus = pkmnSpNameObj[0].genus;
                 console.log(pkmnName);
                 console.log(pkmnGenus);
-                let pkmnFlavorObj = pokemon_species_flavor_text.filter(o => {
+                let pkmnFlavorObj = pokemon_species_flavor_text.filter(o => (
                     o.version_id === 29 && o.language_id === 9
-                });
+                ));
                 console.log(pkmnFlavorObj[0]);
                 let pkmnFlavor = pkmnFlavorObj[0].flavor_text;
                 console.log(pkmnFlavor[0]);
