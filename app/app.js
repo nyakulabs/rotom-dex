@@ -44,18 +44,23 @@ app.setHandler({
                 let pkmnObj = json.pokemon_species.filter(o => {
                     o.identifier === pokemon.value.toLowerCase()
                 });
+                console.log(pkmnObj);
                 let pkmnID = pkmnObj.id;
-
+                console.log(pkmnID);
                 let pkmnSpNameObj = json.pokemon_species_names.filter(o => {
                     o.pokemon_species_id === pkmnID && o.local_language_id === 9
                 });
+                console.log(pkmnSpNameObj);
                 let pkmnName = pkmnSpNameObj.name;
                 let pkmnGenus = pkmnSpNameObj.genus;
-
+                console.log(pkmnName);
+                console.log(pkmnGenus);
                 let pkmnFlavorObj = json.pokemon_species_flavor_text.filter(o => {
                     o.version_id === 29 && o.language_id === 9
                 });
+                console.log(pkmnFlavorObj);
                 let pkmnFlavor = pkmnFlavorObj.flavor_text;
+                console.log(pkmnFlavor);
                 let fullResponse = `${pkmnName}, the ${pkmnGenus}. ${pkmnFlavor}`;
                 this.tell(fullResponse);
                 console.log(`Request for ${pkmnName} fulfilled. [${Date.now()}]`);
