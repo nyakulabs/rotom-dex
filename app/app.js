@@ -43,25 +43,28 @@ app.setHandler({
                     o.identifier === pokemon.value.toLowerCase()
                 ))[0];
 
-                let pkmnID = pkmnObj.id;
+                if (!pkmnObj) {
+                    this.tell('Sorry, I don\'t know about that Pokémon.');
+                } else {
+                    let pkmnID = pkmnObj.id;
 
-                let pkmnSpNameObj = pokemon_species_names.filter(o => (
-                   o.pokemon_species_id === pkmnID && o.local_language_id === 9
-                ))[0];
+                    let pkmnSpNameObj = pokemon_species_names.filter(o => (
+                       o.pokemon_species_id === pkmnID && o.local_language_id === 9
+                    ))[0];
 
-                let pkmnName = pkmnSpNameObj.name;
-                let pkmnGenus = pkmnSpNameObj.genus;
+                    let pkmnName = pkmnSpNameObj.name;
+                    let pkmnGenus = pkmnSpNameObj.genus;
 
-                let pkmnFlavorObj = pokemon_species_flavor_text.filter(o => (
-                    o.version_id === 29 && o.language_id === 9
-                ))[0];
+                    let pkmnFlavorObj = pokemon_species_flavor_text.filter(o => (
+                        o.version_id === 29 && o.language_id === 9
+                    ))[0];
 
-                let pkmnFlavor = pkmnFlavorObj.flavor_text.replace(/[\r\n]+/g,' ');
+                    let pkmnFlavor = pkmnFlavorObj.flavor_text.replace(/[\r\n]+/g,' ');
 
-                let fullResponse = `${pkmnName}, the ${pkmnGenus}. ${pkmnFlavor}`;
-                this.tell(fullResponse);
-                console.log(`Request for ${pkmnName} fulfilled. [${Date.now()}]`);
-
+                    let fullResponse = `${pkmnName}, the ${pkmnGenus}. ${pkmnFlavor}`;
+                    this.tell(fullResponse);
+                    console.log(`Request for ${pkmnName} fulfilled. [${Date.now()}]`);
+                }
             } catch(err) {
                 this.tell('An error has occurred.');
                 console.log(err);
