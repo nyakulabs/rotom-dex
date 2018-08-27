@@ -59,7 +59,7 @@ app.setHandler({
                         o.language_id === 9 && o.species_id === pkmnID
                     ));
 
-                    let pkmnFlavor = pkmnFlavorObj.flavor_text.replace(/[\r\n]+/g,' ');
+                    let pkmnFlavor = pkmnFlavorObj[pkmnFlavorObj.length - 1].flavor_text.replace(/[\r\n]+/g,' ');
 
                     let fullResponse = `${pkmnName}, the ${pkmnGenus}. ${pkmnFlavor}`;
                     this.tell(fullResponse);
