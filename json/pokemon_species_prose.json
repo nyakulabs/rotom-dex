@@ -1,0 +1,172 @@
+[
+    {
+        "form_description": "Spiky-eared Pichu can only be received by taking the shiny Pichu from an official promotion to []{pokemon:celebi}'s shrine in []{location:ilex-forest}.  Spiky-eared Pichu is always female, cannot evolve, cannot be taken into the Wi-Fi Club or the Union Room, and cannot be transferred to Generation V, but is otherwise a normal Pichu.",
+        "local_language_id": 9,
+        "pokemon_species_id": 172
+    },
+    {
+        "form_description": "Forms only affect appearance.  A form is determined at random before a wild encounter and cannot be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 201
+    },
+    {
+        "form_description": "Form changes along with type to match the [weather]{mechanic:weather} in battle, due to []{ability:forecast}.  Castform is always in its normal form outside of battle, regardless of weather.",
+        "local_language_id": 9,
+        "pokemon_species_id": 351
+    },
+    {
+        "form_description": "Forms have different stats and can learn different moves.  Moves are retained through form changes.\n\nIn Generation III, Deoxys's form depends on the game: Normal Forme in Ruby and Sapphire, Attack Forme in FireRed, Defense Forme in LeafGreen, and Speed Forme in Emerald.  In subsequent games, every form exists.  Meteorites for switching Deoxys's form can be found in the following locations, depending on the game:\n\n* Diamond, Pearl, and Platinum: In the southwest corner of []{location:veilstone-city}.\n* HeartGold and SoulSilver: At the west end of []{location:kanto-route-3}, near []{location:pewter-city}.\n* Black and White 1 & 2: In the museum in []{location:nacrene-city}, there is a single meteorite on display which cycles between all forms.",
+        "local_language_id": 9,
+        "pokemon_species_id": 386
+    },
+    {
+        "form_description": "Forms only affect appearance, although they become permanent upon evolution.  Wild and newly-hatched Burmy are always in a Plant Cloak.  Burmy's cloak changes to match the terrain after a battle it participated in: Plant Cloak by default; Sandy Cloak in sandy or rocky areas, such as beaches, caves, and trails; and Trash Cloak in buildings.",
+        "local_language_id": 9,
+        "pokemon_species_id": 412
+    },
+    {
+        "form_description": "Forms have different stats and movepools.  During evolution, Burmy's current cloak becomes Wormadam's form, and can no longer be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 413
+    },
+    {
+        "form_description": "Sunshine form is active during [strong sunlight]{mechanic:strong-sunlight}.  Otherwise, Cherrim defaults to its Overcast form.",
+        "local_language_id": 9,
+        "pokemon_species_id": 421
+    },
+    {
+        "form_description": "Forms only affect appearance.  A form is determined before a wild encounter based on whether the battle is in western or eastern Sinnoh, or inherited from the mother when breeding, and cannot be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 422
+    },
+    {
+        "form_description": "Forms only affect appearance.  A form is determined before a wild encounter based on whether the battle is in western or eastern Sinnoh and cannot be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 423
+    },
+    {
+        "form_description": "Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.  In Generation IV, all forms are Electric/Ghost type.\n\nWhen switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns []{move:thunder-shock} to avoid having no moves.\n\nAppliances for switching Rotom's form can be found in the following locations, depending on the game:\n\n* Platinum: In the Team Galactic Eterna Building.  Requires a []{item:secret-key}.\n* HeartGold and SoulSilver: In the Silph Co. Office Building.  Enter the building when walking with Rotom and enter the broken elevator.\n* Black and White 1 & 2: In Shopping Mall Nine.  Found in boxes in a storage room on the first floor on the far right.",
+        "local_language_id": 9,
+        "pokemon_species_id": 479
+    },
+    {
+        "form_description": "Forms have different stats and can learn different moves from tutors.  Moves are retained through form changes.  Giratina transforms into Origin Forme in the []{location:distortion-world} or while holding a []{item:griseous-orb}.  Otherwise, it assumes its Altered Forme.\n\nIn Generation IV, the Griseous Orb returns to the bag upon entering the Wi-Fi Club or the Union Room.",
+        "local_language_id": 9,
+        "pokemon_species_id": 487
+    },
+    {
+        "form_description": "Forms have different stats and can learn different moves.  Moves are retained through form changes.  Shaymin transforms into Sky Forme with the use of a []{item:gracidea}.  It is limited to Land Forme at night, when [frozen]{mechanic:frozen}, and in the storage system boxes; under these conditions, Sky Shaymin reverts to Land Forme, and the Gracidea has no effect.  The Gracidea must be used again to return to Sky Forme.\n\nIn Generation IV, Shaymin is also limited to Land Forme in the Wi-Fi Club and the Union Room.\n\nA Gracidea may be received by showing a Shaymin met in a fateful encounter to a certain NPC, depending on the game:\n\n* Platinum: A woman in southwest []{location:floaroma-town}.\n* HeartGold and SoulSilver: The owner of the []{location:goldenrod-city} flower shop.\n* Black and White: A woman in the []{location:lacunosa-town} Pokémon Center.\n* Black 2 and White 2: A woman in the []{location:striaton-city} Pokémon Center.",
+        "local_language_id": 9,
+        "pokemon_species_id": 492
+    },
+    {
+        "form_description": "Form changes along with type to match a held Plate, due to []{ability:multitype}.",
+        "local_language_id": 9,
+        "pokemon_species_id": 493
+    },
+    {
+        "form_description": "Forms have one different ability and different wild held items.  Blue-Striped Basculin are rarer in Black Version and Black Version 2, and Red-Striped Basculin in White Version and White Version 2.",
+        "local_language_id": 9,
+        "pokemon_species_id": 550
+    },
+    {
+        "form_description": "Forms have different stats and types.  If Darmanitan's ability is []{ability:zen-mode}, it changes to Zen Mode in battle if it ends a turn below 50% HP, and back to Standard Mode if it ends a turn at 50% HP or above, leaves battle, or loses its ability.",
+        "local_language_id": 9,
+        "pokemon_species_id": 555
+    },
+    {
+        "form_description": "Forms only affect appearance.  Deerling switches forms to match the season if it is in the party upon loading the game.\n\nIf the season has changed since the game was saved, and the game was saved indoors, the previous save's season will be displayed upon loading the game, and Deerling will change according to that season.  Upon stepping outdoors, the change of season is displayed and Deerling will change again.",
+        "local_language_id": 9,
+        "pokemon_species_id": 585
+    },
+    {
+        "form_description": "Forms only affect appearance.  Sawsbuck switches forms to match the season if it is in the party upon loading the game.\n\nIf the season has changed since the game was saved, and the game was saved indoors, the previous save's season will be displayed upon loading the game, and Sawsbuck will change according to that season.  Upon stepping outdoors, the change of season is displayed and Deerling will change again.",
+        "local_language_id": 9,
+        "pokemon_species_id": 586
+    },
+    {
+        "form_description": "Forms have different stats and abilities.  Tornadus switches forms when the []{item:reveal-glass} is used on it.\n\nThe Reveal Glass may be obtained by taking a Therian []{pokemon:landorus} to []{location:abundant-shrine}.  (Landorus can be obtained in Therian Forme from the Dream Radar.)",
+        "local_language_id": 9,
+        "pokemon_species_id": 641
+    },
+    {
+        "form_description": "Forms have different stats and abilities.  Thundurus switches forms when the []{item:reveal-glass} is used on it.\n\nThe Reveal Glass may be obtained by taking a Therian []{pokemon:landorus} to []{location:abundant-shrine}.  (Landorus can be obtained in Therian Forme from the Dream Radar.)",
+        "local_language_id": 9,
+        "pokemon_species_id": 642
+    },
+    {
+        "form_description": "Forms have different stats and abilities.  Landorus switches forms when the []{item:reveal-glass} is used on it.\n\nThe Reveal Glass may be obtained by taking a Therian Landorus to []{location:abundant-shrine}.  (Landorus can be obtained in Therian Forme from the Dream Radar.)",
+        "local_language_id": 9,
+        "pokemon_species_id": 645
+    },
+    {
+        "form_description": "Forms have different stats, abilities, and signature moves.  Kyurem fuses with []{pokemon:reshiram} to become White Kyurem or []{pokemon:zekrom} to become Black Kyurem.  The []{item:dna-splicers} are used to fuse Kyurem with another Pokémon or separate them again.  While fused, the other Pokémon disappears.  Signature moves are replaced by the equivalent moves when switching forms.",
+        "local_language_id": 9,
+        "pokemon_species_id": 646
+    },
+    {
+        "form_description": "Forms only affect appearance.  In Black and White Versions 2, Keldeo becomes Resolute Form when it learns []{move:secret-sword} and reverts to Ordinary Form if it forgets that move.",
+        "local_language_id": 9,
+        "pokemon_species_id": 647
+    },
+    {
+        "form_description": "Forms have different stats and types.  Meloetta changes form upon using []{move:relic-song} in battle, and reverts to Aria Forme outside of battle.",
+        "local_language_id": 9,
+        "pokemon_species_id": 648
+    },
+    {
+        "form_description": "Form changes to match Genesect's held Drive.  The only differences are the color of its weapon and []{move:techno-blast}'s type.",
+        "local_language_id": 9,
+        "pokemon_species_id": 649
+    },
+    {
+        "form_description": "Forms only differ in appearance.  Vivillon's pattern depends on the real-world geographical region set in its original trainer's 3DS, and cannot be changed.\n\nTrading a Scatterbug, Spewpa, or egg does not affect the pattern it will have as a Vivillon.  Changing the 3DS's region setting will not affect the game's Vivillon pattern until the player starts a new game.\n\nThe Fancy and Poké Ball Patterns do not correspond to any region and are only available through distributions.",
+        "local_language_id": 9,
+        "pokemon_species_id": 666
+    },
+    {
+        "form_description": "Forms only differ in appearance.  Flabébé's flower is set when it is encountered, and cannot be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 669
+    },
+    {
+        "form_description": "Floette's five regular forms only differ in appearance.  Floette's flower is set when it is encountered, or as a Flabébé, and cannot be changed.\n\nEternal Floette has higher stats, cannot evolve or breed, and learns []{move:light-of-ruin} at level 50.  It is currently not obtainable.",
+        "local_language_id": 9,
+        "pokemon_species_id": 670
+    },
+    {
+        "form_description": "Forms only differ in appearance.  Florges's flower is set as a Flabébé or Floette, and cannot be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 671
+    },
+    {
+        "form_description": "Forms only differ in appearance.  Furfrou's trim can be changed at any time in Friseur Furfrou in Lumiose City.  It reverts to its Natural Form after five days unless trimmed again, or if it is deposited in the PC.",
+        "local_language_id": 9,
+        "pokemon_species_id": 676
+    },
+    {
+        "form_description": "Male and female Meowstic have different level-up moves and hidden abilities.  While gender differences are not usually considered to be separate forms, Meowstic's are treated as such for practical purposes.",
+        "local_language_id": 9,
+        "pokemon_species_id": 678
+    },
+    {
+        "form_description": "Forms have different stats.  If Aegislash's ability is []{ability:stance-change}, it changes to Blade Forme before using a damaging move, and reverts to Shield Forme before using King's Shield or upon leaving the field.",
+        "local_language_id": 9,
+        "pokemon_species_id": 681
+    },
+    {
+        "form_description": "Forms have different stats.  Pumpkaboo's size is set when it is encountered, and cannot be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 710
+    },
+    {
+        "form_description": "Forms have different stats.  Gourgeist's size is set as a Pumpkaboo, and cannot be changed.",
+        "local_language_id": 9,
+        "pokemon_species_id": 711
+    },
+    {
+        "form_description": "Forms only differ in appearance.  Xerneas is always in Neutral Mode outside of battle, and Active Mode in battle.",
+        "local_language_id": 9,
+        "pokemon_species_id": 716
+    }
+]
