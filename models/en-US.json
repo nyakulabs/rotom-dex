@@ -10,29 +10,7 @@
             ]
         },
         {
-            "name":"PokemonInfoSingle",
-            "phrases":[
-                "tell me about {pokemon}",
-                "{pokemon} info",
-                "info about {pokemon}"
-                "look up {pokemon}",
-                "about {pokemon}",
-                "{pokemon} information",
-                "information about {pokemon}",
-                "{pokemon}"
-            ],
-            "inputs":[
-                {
-                    "name":"pokemon",
-                    "type":{
-                        "alexa":"AMAZON.SearchQuery",
-                        "dialogflow":"@sys.any"
-                    }
-                }
-            ]
-        },
-        {
-            "name":"PokemonInfoContinue",
+            "name":"PokemonInfo",
             "phrases":[
                 "tell me about {pokemon}",
                 "{pokemon} info",
