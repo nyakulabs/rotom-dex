@@ -43,7 +43,7 @@ app.setHandler({
                 ))[0];
 
                 if (!pkmnObj) {
-                    this.tell('Sorry, I don\'t know about that Pokémon.');
+                    this.ask('Sorry, I don\'t know about that Pokémon. Please try again.');
                 } else {
                     let pkmnID = pkmnObj.id;
 
