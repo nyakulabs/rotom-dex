@@ -61,7 +61,7 @@ app.setHandler({
                     let pkmnFlavor = pkmnFlavorObj[pkmnFlavorObj.length - 1].flavor_text.replace(/[\r\n]+/g,' ');
 
                     let fullResponse = `${pkmnName}, the ${pkmnGenus}. ${pkmnFlavor}`;
-                    this.ask(fullResponse);
+                    this.tell(fullResponse);
                     console.log(`Request for ${pkmnName} fulfilled. [${Date.now()}]`);
                 }
             } catch(err) {
